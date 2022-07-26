@@ -27,5 +27,5 @@ jobs:
           server: 137.184.97.211
           username: ftp
           password: ffff
-          local-dir: 'dist/'
-          server-dir: '/'
+          local-dir: './dist/'
+          server-dir: './'
