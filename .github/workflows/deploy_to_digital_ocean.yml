@@ -38,13 +38,16 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
+    - name: get latest code
     - uses: actions/checkout@v2
-    - name: ftp-action
-      uses: sebastianpopp/ftp-action@v2.0.0
+    
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+
       with:
-        host: ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        localDir: "dist"
-        remoteDir: "/"
+        local-dir: "dist"
+        server-dir: "/"
 
