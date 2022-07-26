@@ -28,4 +28,4 @@ jobs:
           server: davidwu.site
           username: ftp
           password: ffff
-          local-dir: './dist'
+          local-dir: './dist/'
