@@ -34,10 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo ${{ secrets.FTP_SERVER }}
-          echo ${{ secrets.FTP_USERNAME }}
-          echo ${{ secrets.FTP_PASSWORD }}
-  deploy:
+
     name: Deploy
     runs-on: ubuntu-latest
     steps:
@@ -47,8 +44,8 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: 137.184.97.211
+          username: ftp
+          password: ffff
           local-dir: 'dist'
           server-dir: '/'
