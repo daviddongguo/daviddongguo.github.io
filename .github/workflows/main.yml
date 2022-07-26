@@ -29,4 +29,4 @@ jobs:
           username: ftp
           password: ffff
           local-dir: './dist/'
-          dry-run:true
+          dry-run: true
