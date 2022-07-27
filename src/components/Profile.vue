@@ -5,9 +5,8 @@
         ><div class="profile-pic">
           <img
             class="media-object img-circle center-block"
-            data-src="holder.js/100x100"
-            alt="David WU"
-            src="https://s.gravatar.com/avatar/54db9e31d89a0dc690e2026d8efcdc08?s=100&amp;r=pg&amp;d=mm"
+            :alt="image.title"
+            :src="image.link"
             itemprop="image"
           />
         </div>
@@ -61,6 +60,13 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import imageLink from '../assets/image/david_pic_eclipse-warmer.jpg'
+const image = ref({
+  title: 'david image',
+  link: imageLink,
+})
+</script>
 
 <style scoped></style>
