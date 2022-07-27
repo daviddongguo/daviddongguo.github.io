@@ -29,4 +29,5 @@ jobs:
           username: ftp
           password: ffff
           local-dir: './dist/'
-          server-dir: '/home/ftp/'
+          server-dir: '/home/ftp/html/'
+          dangerous-clean-slate: true
