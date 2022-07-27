@@ -23,17 +23,12 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: check secrets
-        env:
-          PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        run: echo $PASSWORD
-
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: davidwu.site
-          username: ftp
+          server: ${{ secrets.FTP_SERVER}}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: './dist/'
-          server-dir: '/home/ftp/html/davidwu.site/'
+          server-dir: ${{ secrets.FTP_DIR }}
           dangerous-clean-slate: true
