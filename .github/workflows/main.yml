@@ -30,4 +30,3 @@ jobs:
           password: ffff
           local-dir: './dist/'
           server-dir: '/home/ftp/'
-          dry-run: true
