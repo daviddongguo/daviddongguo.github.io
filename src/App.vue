@@ -1,23 +1,22 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onBeforeMount } from 'vue'
 import FloatingNavVue from './components/FloatingNav.vue'
 import ProfileVue from './components/Profile.vue'
 import RightVue from './components/Right.vue'
-onMounted(() => {
-  console.log('onMounted')
+onBeforeMount(() => {
   const WebFontConfig = {
-    google: { families: ['Lato:300,400,700:latin'] },
+    google: {
+      families: ['Roboto:300,400,700'],
+    },
   }
-  ;(function () {
-    const wf = document.createElement('script')
-    wf.src =
-      ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js'
-    wf.type = 'text/javascript'
-    wf.async = 'true'
-    const s = document.getElementsByTagName('script')[0]
+
+  ;(function (d) {
+    var wf = d.createElement('script'),
+      s = d.scripts[0]
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'
+    wf.async = true
     s.parentNode.insertBefore(wf, s)
-  })()
+  })(document)
 })
 </script>
 
