@@ -27,7 +27,7 @@ jobs:
         with:
           server: davidwu.site
           username: ftp
-          password: ffff
+          password: ${{secrets.FTP_PASSWORD}}
           local-dir: './dist/'
           server-dir: '/home/ftp/html/davidwu.site/'
           dangerous-clean-slate: true
