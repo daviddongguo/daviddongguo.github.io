@@ -24,6 +24,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: './docs/'
-          server_path: ${{ secrets.FTP_DIR }}
+          remote_path: ${{ secrets.FTP_DIR }}
           sftpArgs: '-0 ConectTimeout=5'
           sftp_only: true
