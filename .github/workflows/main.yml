@@ -25,5 +25,6 @@ jobs:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: './docs/'
           remote_path: ${{ secrets.FTP_DIR }}
-          sftpArgs: '-0 ConectTimeout=5'
+          sftpArgs: '-o ConectTimeout=5'
           sftp_only: true
+          delete_remote_files: false
