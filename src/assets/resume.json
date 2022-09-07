@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "David WU",
+    "name": "Dongguo WU",
     "label": "C# Developer",
     "image": "",
     "email": "david.dong.guo@gmail.com",
     "phone": "51481308XX",
-    "url": "https://davidwu.site",
+    "url": "https://dongguo.xyz",
     "summary": "Full stack developer\n2 years of professional experience\n",
     "location": {
       "region": "QC",
