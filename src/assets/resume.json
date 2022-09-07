@@ -1,0 +1,147 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "David WU",
+    "label": "C# Developer",
+    "image": "",
+    "email": "david.dong.guo@gmail.com",
+    "phone": "51481308XX",
+    "url": "https://davidwu.site",
+    "summary": "Full stack developer\n2 years of professional experience\n",
+    "location": {
+      "region": "QC",
+      "city": "Montreal",
+      "address": "Pointe-Claire"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "daviddongguo",
+        "url": "https://www.linkedin.com/in/daviddongguo/"
+      },
+      {
+        "network": "Github",
+        "username": "daviddongguo",
+        "url": "https://www.github.com/daviddongguo/"
+      }
+    ]
+  },
+
+  "skills": [
+    {
+      "name": "back-end",
+      "level": "Master",
+      "keywords": ["C#", ".net"]
+    },
+    {
+      "name": "front-end",
+      "level": "Master",
+      "keywords": ["Vue", "React", "HTML%", "CSS"]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Ticketing Using Mircroservices Hosted on DigitalOcean Kubernetes Clusters",
+      "startDate": "2020-11-30",
+      "summary": "TicketingApp\nSale and purchase tickets\n\n•\tIncludes ticket, order, expiration, payment, and client independent services\n•\tTypescripts, Node.JS, Express, React, Next.JS, Jest applied\n•\tDeployed on Digital Ocean Kubernetes Clusters.\n",
+      "url": "https://github.com/daviddongguo/ticketing"
+    },
+    {
+      "name": "Hotel booking web",
+      "startDate": "2020-10-31",
+      "summary": "One-page web to display the hotel rooms booking status\n\nFront lives on [Azure](https://proud-stone-0f1f1d00f.azurestaticapps.net/)\nfrontend: <https://github.com/daviddongguo/hotelbooking.reactweb>\nbackend swagger lives on [Azure](https://davidwuhotelbooking.azurewebsites.net/swagger/index.html)\nbackend: <https://github.com/daviddongguo/hotelbooking>",
+      "url": "https://proud-stone-0f1f1d00f.azurestaticapps.net/"
+    },
+    {
+      "name": "Library Database Project using SQL Server (Team Project)",
+      "startDate": "2018-09-30",
+      "summary": "•\tIt has three schemas – and 9 tables \n•\tEach table are linked with their appropriate primary keys \n•\tand tables can correlate one to another\n•\tCreated queries, views, function, trigger and procedures\n•\tfinished all actions for borrowing a book that includes validating membership, checking the loanable status of this book, inserting a record into loan table, then updating copy table and item table. ",
+      "url": "https://github.com/daviddongguo/Library-Database-Project-",
+      "endDate": "2018-09-30"
+    },
+    {
+      "name": "Books Stroe Website (Personal)",
+      "startDate": "2018-08-31",
+      "summary": "•\tList books by category and pagination\n•\tAdd books to shipping cart and  check out\n•\tManage books as an administrator \nTechnologies:   SQL Server, EntityFramework, LINQ\n                        Visual Studio and Moq, Autofac\n                        Unit testing, and MVC pattern\n\nhttps://github.com/daviddongguo/BooksStore2021\n",
+      "url": "https://booksstore2021.azurewebsites.net"
+    },
+    {
+      "name": "Top restaurants around ",
+      "startDate": "2021-02-28",
+      "summary": "GitHub: https://github.com/daviddongguo/around-you\nTop restaurants around\nLive on http://davidwu.online/aroundyou/\nBackend\nhttp://davidwu.online/api/restaurants/top3\nhttp://davidwu.online/api/restaurants/top20bydistance",
+      "url": "http://davidwu.online/aroundyou/",
+      "endDate": "2021-02-28"
+    },
+    {
+      "name": "Generic Data Submission Tool",
+      "startDate": "2019-05-31",
+      "summary": "a web-based, form-driven data collection system that can quickly adapt to the needs of consumers who will easily build and maintain the form.\n\nbackend lives on  Heroku\nfrontend lives on https://witty-ocean-04eef0510.azurestaticapps.net/#/login\n\nhttps://github.com/daviddongguo/MOHLTC-DataProject\nhttps://github.com/daviddongguo/MOHLTC-DataProject-Tests-WithSelenium\nhttps://github.com/daviddongguo/FilterExcel.MOH.ON\n",
+      "url": "https://witty-ocean-04eef0510.azurestaticapps.net/#/login",
+      "endDate": "2019-08-31"
+    }
+  ],
+  "work": [
+    {
+      "name": "Health Services I&IT Cluster Integrated Health Solutions Branch Ministry of Health ON",
+      "position": "Internship",
+      "startDate": "2019-05-31",
+      "endDate": "2019-08-31",
+      "highlights": [],
+      "summary": "As a co-op student, working for Generic Data Collection Project. Main responsible is developing a tool that retrieves data from existed MS Excel files by using .NET Core, NOPI and writing APIs based on MongoDB, NodeJs.",
+      "url": "",
+      "location": "5700 Yonge, 10th floor, Toronto ON M2M 4K5"
+    },
+    {
+      "name": "China Merchants Chongqing Communications Research & Design Institute Co., Ltd.",
+      "position": "Senior Civil Engineer  /  Project Manager",
+      "startDate": "2010-12-31",
+      "endDate": "2017-12-31",
+      "highlights": [],
+      "url": "",
+      "location": "Chongqing City, China"
+    },
+    {
+      "name": "China Merchants Chongqing Communications Research & Design Institute Co., Ltd.",
+      "position": "Intermediate Engineer",
+      "startDate": "2006-12-31",
+      "endDate": "2010-12-31",
+      "highlights": [],
+      "url": "",
+      "location": "Chongqing City, China"
+    }
+  ],
+  "education": [
+    {
+      "institution": "CEGEP - John Abbott College",
+      "area": "Internet Programming and Development",
+      "studyType": "AEC",
+      "startDate": "2018-12-31",
+      "endDate": "2019-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Victoria Training Center (Montreal)",
+      "area": ".NET Foundation & Real Project ",
+      "studyType": "",
+      "startDate": "2018-12-31",
+      "endDate": "2019-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Beijing Forestry University",
+      "area": "Engineering",
+      "studyType": "Master's degree",
+      "startDate": "1997-12-31",
+      "endDate": "2004-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "theme": "elegant"
+  }
+}

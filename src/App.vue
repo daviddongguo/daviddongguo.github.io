@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import { onBeforeMount } from 'vue'
 import FloatingNavVue from './components/FloatingNav.vue'
 import ProfileVue from './components/Profile.vue'
 import RightVue from './components/Right.vue'
+import json from './assets/resume.json'
+const resume = { json }
 </script>
 
 <template>
   <div class="container-fluid">
     <div class="row main clearfix">
       <FloatingNavVue />
-      <ProfileVue />
+      <ProfileVue :basics="resume.json.basics" />
       <RightVue />
     </div>
   </div>

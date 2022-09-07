@@ -11,7 +11,9 @@
           />
         </div>
         <div class="name-and-profession text-center">
-          <h3 itemprop="name"><b>David WU</b></h3>
+          <h3 itemprop="name">
+            <b>{{ basics.name }}</b>
+          </h3>
           <h5 class="text-muted" itemprop="jobTitle">C# Developer</h5>
         </div></span
       >
@@ -63,6 +65,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import imageLink from '../assets/image/david_pic_eclipse-warmer.jpg'
+
+const props = defineProps({
+  basics: String,
+})
+
 const image = ref({
   title: 'david image',
   link: imageLink,
