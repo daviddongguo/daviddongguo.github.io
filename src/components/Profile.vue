@@ -66,9 +66,15 @@
 import { ref } from 'vue'
 import imageLink from '../assets/image/david_pic_eclipse-warmer.jpg'
 
-const props = defineProps({
-  basics: String,
-})
+type basicsType = {
+  name: String
+}
+
+interface Props {
+  basics: basicsType
+}
+
+const props = defineProps<Props>()
 
 const image = ref({
   title: 'david image',
