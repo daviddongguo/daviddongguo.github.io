@@ -11,7 +11,8 @@
     "location": {
       "region": "QC",
       "city": "Montreal",
-      "address": "Pointe-Claire"
+      "address": "Pointe-Claire",
+      "postalCode": "H9RXXX"
     },
     "profiles": [
       {
@@ -36,7 +37,7 @@
     {
       "name": "front-end",
       "level": "Master",
-      "keywords": ["Vue", "React", "HTML%", "CSS"]
+      "keywords": ["Vue", "React", "HTML", "CSS"]
     }
   ],
 
@@ -89,7 +90,6 @@
       "endDate": "2019-08-31",
       "highlights": [],
       "summary": "As a co-op student, working for Generic Data Collection Project. Main responsible is developing a tool that retrieves data from existed MS Excel files by using .NET Core, NOPI and writing APIs based on MongoDB, NodeJs.",
-      "url": "",
       "location": "5700 Yonge, 10th floor, Toronto ON M2M 4K5"
     },
     {
@@ -98,7 +98,6 @@
       "startDate": "2010-12-31",
       "endDate": "2017-12-31",
       "highlights": [],
-      "url": "",
       "location": "Chongqing City, China"
     },
     {
@@ -107,7 +106,6 @@
       "startDate": "2006-12-31",
       "endDate": "2010-12-31",
       "highlights": [],
-      "url": "",
       "location": "Chongqing City, China"
     }
   ],

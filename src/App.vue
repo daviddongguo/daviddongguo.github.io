@@ -2,25 +2,11 @@
 import FloatingNavVue from './components/FloatingNav.vue'
 import ProfileVue from './components/Profile.vue'
 import RightVue from './components/Right.vue'
+import { ResumeInfo } from './resumeInfo'
 import json from './assets/resume.json'
-const resume = json
-
-type resumeType = {
-  $schema: string
-  basics: {
-    name: string
-    label: string
-    image: string
-    email: string
-    phone: string
-    url: string
-    summary: string
-    location: {
-      region: string
-      city: string
-      address: string
-    }
-  }
+const resume: ResumeInfo = json
+const myProps = {
+  foo: 'a common string',
 }
 </script>
 
@@ -28,7 +14,9 @@ type resumeType = {
   <div class="container-fluid">
     <div class="row main clearfix">
       <FloatingNavVue />
-      <ProfileVue :basics="resume.basics" />
+      <!-- <ProfileVue :basics="resume.basics" /> -->
+      <ProfileVue :resume="resume" />
+      <!-- <ProfileVue :props="props" /> -->
       <RightVue />
     </div>
   </div>
