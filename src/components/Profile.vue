@@ -12,20 +12,24 @@
         </div>
         <div class="name-and-profession text-center">
           <h3 itemprop="name">
-            <b>{{ props.resume.basics.name }}</b>
+            <b>{{ resume.basics.name }}</b>
           </h3>
-          <h5 class="text-muted" itemprop="jobTitle">C# Developer</h5>
+          <h5 class="text-muted" itemprop="jobTitle">
+            {{ resume.basics.label }}
+          </h5>
         </div></span
       >
       <hr />
       <div class="contact-details clearfix">
         <div class="detail">
           <span class="icon"><i class="icon fs-lg icon-location"></i></span
-          ><span class="info">Pointe-Claire, Montreal, QC</span>
+          ><span class="info">{{ resume.basics.location.city }}</span>
         </div>
         <div class="detail">
           <span class="icon"><i class="icon fs-lg icon-phone"></i></span
-          ><span class="info" itemprop="telephone">51481308XX</span>
+          ><span class="info" itemprop="telephone">{{
+            resume.basics.phone
+          }}</span>
         </div>
         <div class="detail">
           <span class="icon"><i class="icon fs-lg icon-mail"></i></span
@@ -34,7 +38,7 @@
               class="link-disguise"
               href="mailto:david.dong.guo@gmail.com"
               itemprop="email"
-              >david.dong.guo@gmail.com</a
+              >{{ resume.basics.email }}</a
             ></span
           >
         </div>
@@ -67,11 +71,7 @@ import { ref } from 'vue'
 import imageLink from '../assets/image/david_pic_eclipse-warmer.jpg'
 import { ResumeInfo } from '../resumeInfo'
 
-interface Props {
-  resume: ResumeInfo
-}
-
-const props = defineProps<Props>()
+defineProps<{ resume: ResumeInfo }>()
 
 const image = ref({
   title: 'david image',

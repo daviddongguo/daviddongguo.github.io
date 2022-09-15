@@ -5,9 +5,6 @@ import RightVue from './components/Right.vue'
 import { ResumeInfo } from './resumeInfo'
 import json from './assets/resume.json'
 const resume: ResumeInfo = json
-const myProps = {
-  foo: 'a common string',
-}
 </script>
 
 <template>
