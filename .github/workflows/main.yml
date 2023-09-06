@@ -17,14 +17,14 @@ jobs:
       - name: Get latest code
         uses: actions/checkout@v2.1.0
 
-      - name: Sync files
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          server: ${{ secrets.FTP_SERVER}}
-          username: ${{ secrets.FTP_USERNAME }}
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: './docs/'
-          remote_path: ${{ secrets.FTP_DIR }}
-          sftpArgs: '-o ConnectTimeout=5'
-          sftp_only: true
-          delete_remote_files: true
+      # - name: Sync files
+      #   uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      #   with:
+      #     server: ${{ secrets.FTP_SERVER}}
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     local_path: './docs/'
+      #     remote_path: ${{ secrets.FTP_DIR }}
+      #     sftpArgs: '-o ConnectTimeout=5'
+      #     sftp_only: true
+      #     delete_remote_files: true
