@@ -14,7 +14,7 @@ const resume: ResumeInfo = json
       <!-- <ProfileVue :basics="resume.basics" /> -->
       <ProfileVue :resume="resume" />
       <!-- <ProfileVue :props="props" /> -->
-      <RightVue />
+      <RightVue :resume="resume" />
     </div>
   </div>
 </template>

@@ -2,15 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Dongguo WU",
-    "label": "C# Developer",
+    "label": "Full Stack Web Developer \nMobile Application Developer",
     "image": "",
     "email": "david.dong.guo@gmail.com",
     "phone": "51481308XX",
     "url": "https://dongguo.xyz",
-    "summary": "Full stack developer\n2 years of professional experience\n",
+    "summary": "Motivated Full Stack Web Developer and Mobile Application Developer, \nStrong learning ability and technical diligence\n",
     "location": {
       "region": "QC",
-      "city": "Montreal",
+      "city": "Pointe-Claire, Montreal, QC",
       "address": "Pointe-Claire",
       "postalCode": "H9RXXX"
     },
@@ -22,12 +22,11 @@
       },
       {
         "network": "Github",
-        "username": "daviddongguo",
-        "url": "https://www.github.com/daviddongguo/"
+        "username": "dongguowu",
+        "url": "https://github.com/dongguowu"
       }
     ]
   },
-
   "skills": [
     {
       "name": "back-end",
@@ -40,7 +39,6 @@
       "keywords": ["Vue", "React", "HTML", "CSS"]
     }
   ],
-
   "projects": [
     {
       "name": "Ticketing Using Mircroservices Hosted on DigitalOcean Kubernetes Clusters",

@@ -55,7 +55,7 @@
           ></a
           ><a
             class="fs-2x social-link link-github icon-github"
-            href="https://www.github.com/daviddongguo/"
+            href="https://github.com/dongguowu"
             target="_blank"
             data-toggle="tooltip"
             title="David WU on Github"
@@ -74,7 +74,7 @@ import { ResumeInfo } from '../resumeInfo'
 defineProps<{ resume: ResumeInfo }>()
 
 const image = ref({
-  title: 'david image',
+  title: '',
   link: imageLink,
 })
 </script>
